@@ -1,0 +1,41 @@
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Secrets ---
+.env
+
+# --- Data (large / private) ---
+data/raw/deep-fashion/
+data/raw/user_images/*
+data/user_data/*/*
+data/processed/*/*
+!data/**/.gitkeep
+
+# --- Model weights ---
+models/pretrained/*
+models/saved_models/*
+!models/**/.gitkeep
+
+# --- Databases ---
+*.db
+*.sqlite3
+
+# --- Logs ---
+logs/*
+!logs/.gitkeep
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
